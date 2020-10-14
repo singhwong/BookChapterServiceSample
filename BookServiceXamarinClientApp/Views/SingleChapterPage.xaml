@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BookServiceXamarinClientApp.Views.SingleChapterPage"
+             Title="Single Chapter">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Enter the book chapter id"
+                   Text="{Binding EnteredId,Mode=TwoWay}"/>
+            <Button Text="Get Single" Command="{Binding GetSingleCommand}"/>
+            <Label Text="Result:" VerticalOptions="End"/>
+            <StackLayout BindingContext="{Binding BookChapterResult}">
+            <Label Text="{Binding Title,Mode=OneWay}"/>
+            <Label Text="{Binding Id,Mode=OneWay}"/>
+            <Label Text="{Binding Number,Mode=OneWay}"/>
+            <Label Text="{Binding PublisherNumber,Mode=OneWay}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

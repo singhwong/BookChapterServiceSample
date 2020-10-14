@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BookServiceXamarinClientApp.Views.PostChapterPage"
+             Title="Post Chapter">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Title" Text="{Binding EnteredTitle,Mode=TwoWay}"/>
+            <Entry Placeholder="Number" Text="{Binding EnteredNumber,Mode=TwoWay}"/>
+            <Editor Placeholder="PublisherNumber" Text="{Binding EnteredPublisherNumber,Mode=TwoWay}"/>
+            <Button Text="Post a new book chapter" Command="{Binding PostChapterCommand}"/>
+            <StackLayout BindingContext="{Binding BookChapterResult}">
+                <Label Text="Back Result:"/>
+                <Label Text="{Binding Id,Mode =OneWay}"/>
+                <Label Text="{Binding Title,Mode=OneWay}"/>
+                <Label Text="{Binding Number,Mode=OneWay}"/>
+                <Label Text="{Binding PublisherNumber,Mode=OneWay}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

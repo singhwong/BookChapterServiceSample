@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BookServiceXamarinClientApp.MainPage"
+             Title="Book Service Client Sample"
+             xmlns:local="clr-namespace:BookServiceXamarinClientApp.Views">
+<TableView Intent="Menu">
+<TableRoot>
+    <TableSection>
+        <TextCell Text="GetAll" Detail="Get all book chapter from service."
+                  Command="{Binding NavigationCommand}"
+                  CommandParameter="{x:Type local:AllChaptersPage}"/>
+        <TextCell Text="GetSingle" Detail="Get a single book chapter from service."
+                  Command="{Binding NavigationCommand}"
+                  CommandParameter="{x:Type local:SingleChapterPage}"/>
+        <TextCell Text="Post" Detail="Add a new book chapter to service."
+                  Command="{Binding NavigationCommand}"
+                  CommandParameter="{x:Type local:PostChapterPage}"/>
+        <TextCell Text="Put" Detail="Update a book chapter from service."
+                  Command="{Binding NavigationCommand}"
+                  CommandParameter="{x:Type local:PutChapterPage}"/>
+        <TextCell Text="Delete" Detail="Remove a book chapter from service."
+                  Command="{Binding NavigationCommand}"
+                  CommandParameter="{x:Type local:DeleteChapterPage}"/>
+    </TableSection>
+</TableRoot>
+</TableView>
+</ContentPage>

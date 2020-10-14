@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BookServiceXamarinClientApp.Views.PutChapterPage"
+             Title="Put Chapter">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Id" Text="{Binding EnteredId,Mode=TwoWay}"/>
+            <Entry Placeholder="Title" Text="{Binding EnteredTitle,Mode=TwoWay}"/>
+            <Entry Placeholder="Number" Text="{Binding EnteredNumber,Mode=TwoWay}"/>
+            <Entry Placeholder="Publish number" Text="{Binding EnteredPublisherNumber,Mode=TwoWay}"/>
+            <Button Text="Put the book chapter" Command="{Binding PutChapterCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

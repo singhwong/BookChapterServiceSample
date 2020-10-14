@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:models="clr-namespace:BookServiceXamarinClientApp.Models" x:Class="BookServiceXamarinClientApp.Views.AllChaptersPage"
+             Title="All Chapters">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Get All Chapters" Command="{Binding GetAllChaptersCommand}"/>
+            <ListView ItemsSource="{Binding AllChapters}"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="models:BookChapter">
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding Title}" FontSize="Title"/>
+                                <Label Text="{Binding Id}"/>
+                                <Label Text="{Binding Number}"/>
+                                <Label Text="{Binding PublisherNumber}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
