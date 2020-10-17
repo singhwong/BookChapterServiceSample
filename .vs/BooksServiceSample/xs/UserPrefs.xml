@@ -1,0 +1,54 @@
+﻿<Properties StartupConfiguration="多个项目">
+  <MonoDevelop.Ide.ItemProperties.BooksServiceSampleHost PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.ItemProperties.BookServiceXamarinClientApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.ED5C24F5-E59B-4E46-8CD4-2806AEAE099D" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BooksServiceSampleHost/Services/BookChaptersService.cs">
+    <Files>
+      <File FileName="BooksServiceSampleHost/DataBaseConf/DatabaseInit.cs" Line="33" Column="1" />
+      <File FileName="BooksServiceSampleHost/DataBaseConf/Contants.cs" Line="10" Column="38" />
+      <File FileName="BooksServiceSampleHost/Services/BookChaptersService.cs" Line="37" Column="54" />
+      <File FileName="BooksServiceSampleHost/Services/SampleChapters.cs" Line="54" Column="65" />
+      <File FileName="BooksServiceSampleHost/Services/IBookChaptersService.cs" Line="11" Column="14" />
+      <File FileName="BooksServiceSampleHost/Controllers/BookChaptersController.cs" Line="45" Column="27" />
+      <File FileName="BooksServiceSampleHost/Startup.cs" Line="36" Column="30" />
+      <File FileName="BooksServiceSampleHost/Models/BookChapter.cs" Line="9" Column="33" />
+      <File FileName="BooksServiceSampleHost/Program.cs" Line="16" Column="1" />
+      <File FileName="BookServiceXamarinClientApp/ViewModels/PostChapterVM.cs" Line="1" Column="1" />
+      <File FileName="BookServiceXamarinClientApp/ViewModels/PutChapterVM.cs" Line="37" Column="51" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BooksServiceSample" expanded="True">
+            <Node name="BookServiceXamarinClientApp" expanded="True">
+              <Node name="ViewModels" expanded="True" />
+            </Node>
+            <Node name="BooksServiceSampleHost" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="DataBaseConf" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="BookChaptersService.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="多个项目" Name="多个项目">
+      <Items>
+        <StartupItem ItemId="{A0980244-12BD-4F6B-B499-9C994696E52E}" ItemName="BookServiceXamarinClientApp.iOS" ConfigurationId="Default" />
+        <StartupItem ItemId="{7888DD7A-A5FE-4823-8426-D0F7C278AC45}" ItemName="BooksServiceSampleHost" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+</Properties>

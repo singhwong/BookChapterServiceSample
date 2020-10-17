@@ -10,11 +10,11 @@ namespace BooksServiceSampleHost.Services
 {
     public class SampleChapters
     {
-        private readonly IBookChaptersService _bookChaptersService;
-        public SampleChapters(IBookChaptersService bookChaptersService)
-        {
-            _bookChaptersService = bookChaptersService;
-        }
+        //private readonly IBookChaptersService _bookChaptersService;
+        //public SampleChapters(IBookChaptersService bookChaptersService)
+        //{
+        //    _bookChaptersService = bookChaptersService;
+        //}
         private string abc = "abcdefghijklmnopqrstuvwsyz";
         private string[] sampleTitles()
         {
@@ -51,7 +51,7 @@ namespace BooksServiceSampleHost.Services
             }
             return nums_page;
         }
-        public async Task CreateSampleChaptersAsync()
+        public IEnumerable<BookChapter> CreateSampleChaptersData()
         {
             var chapters = new List<BookChapter>();
             for (int i = 0; i < 100; i++)
@@ -64,7 +64,7 @@ namespace BooksServiceSampleHost.Services
                     PublisherNumber = numberPages()[i],
                 });
             }
-            await _bookChaptersService.AddRangeAsync(chapters);
+            return chapters;
         }
     }
 }
